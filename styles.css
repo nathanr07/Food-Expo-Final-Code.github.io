@@ -28,7 +28,7 @@ nav a.nav-home {
 
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/images/hero2.jpg");
+    url("hero2.jpg");
   height: 85%;
   background-position: center;
   background-repeat: no-repeat;
