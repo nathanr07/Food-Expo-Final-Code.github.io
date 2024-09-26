@@ -1,0 +1,131 @@
+/* Gallery styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0ebe6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav a.nav-gallery {
+    font-weight: 800;
+    border-bottom: 2px solid #ffffff; /* Underline effect for emphasis */
+  }
+  
+  .gallery-section {
+    padding: 0 20px;
+    background-color: #f0ebe6;
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 100px;
+  }
+  
+  .gallery-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .gallery-section p {
+    font-size: 1.2rem;
+    margin-bottom: 100px;
+    color: #555;
+  }
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 0 40px;
+  }
+  
+  .gallery-item {
+    background-color: #d9d7ce;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  
+  .gallery-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    width: 80%;
+    max-width: 800px;
+  }
+  
+  .modal-close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+  }
+  
+  .gallery-item h2 {
+    font-size: 1.5rem;
+    margin: 10px 0 5px;
+  }
+  
+  .gallery-item p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Media queries for responsive adjustments */
+  @media (max-width: 800px) {
+    .gallery-section h1 {
+      font-size: 2rem; /* Smaller heading on smaller screens */
+    }
+  
+    .gallery-section p {
+      font-size: 1rem; /* Smaller paragraph text */
+      margin-bottom: 50px; /* Reduce bottom margin */
+    }
+  
+    .gallery-grid {
+      padding: 0 20px; /* Less padding on smaller screens */
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .gallery-section h1 {
+      font-size: 1.5rem; /* Even smaller heading for mobile */
+    }
+  
+    .gallery-section p {
+      font-size: 0.9rem; /* Smaller paragraph text for mobile */
+      margin-bottom: 30px; /* Adjust bottom margin */
+    }
+  
+    .gallery-item h2 {
+      font-size: 1.2rem; /* Smaller heading in gallery items */
+    }
+  
+    .gallery-item p {
+      font-size: 0.9rem; /* Smaller text in gallery items */
+    }
+  }
+  
